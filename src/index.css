@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+
+/* Asegurarse de que el body y html ocupen toda la pantalla */
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden; /* Evitar que el contenido se desborde */
+  }
