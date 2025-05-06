@@ -38,16 +38,17 @@ src/
 
 
 ## ⚙️ Instalación y uso  
-Cloná el proyecto:
-git clone https://github.com/tu-usuario/tu-repo.git
-cd tu-repo
+1. Cloná este repositorio en tu máquina local:
+git clone https://github.com/FlorenciaPenaranda/React_TP3
 
-Instalá dependencias:
+2. Navegá a la carpeta del proyecto e instalá las dependencias:
+cd React_TP3
 npm install
 
-Corré el servidor:
+3. Iniciá el servidor de desarrollo:
 npm run dev
-Abrí el navegador en http://localhost:5173 o el puerto que indique Vite.
+
+4. Abrí tu navegador en http://localhost:5173 (o el puerto que indique Vite) para ver la aplicación en acción. 🌐
 
 ##  📌 Funcionalidades
 ✅ Vista de login (estática)
