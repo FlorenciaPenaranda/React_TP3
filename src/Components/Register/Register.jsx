@@ -36,6 +36,7 @@ function Register() {
               name="name"
               type="text"
               placeholder="Tu nombre"
+              autoComplete="name"
               className="mt-1 w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
             />
           </div>
@@ -49,6 +50,7 @@ function Register() {
               name="email"
               type="email"
               placeholder="nombre@email.com"
+              autoComplete="email"
               className="mt-1 w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
             />
           </div>
@@ -63,6 +65,7 @@ function Register() {
                 name="password"
                 type={passwordShown ? 'text' : 'password'}
                 placeholder="********"
+                autoComplete="password"
                 className="mt-1 w-full border border-gray-300 rounded-md p-2 pr-10 focus:outline-none focus:ring-2 focus:ring-blue-400"
               />
               <button
@@ -85,6 +88,7 @@ function Register() {
                 name="confirmPassword"
                 type={confirmPasswordShown ? 'text' : 'password'}
                 placeholder="********"
+                autoComplete="confirmPassword"
                 className="mt-1 w-full border border-gray-300 rounded-md p-2 pr-10 focus:outline-none focus:ring-2 focus:ring-blue-400"
               />
               <button
