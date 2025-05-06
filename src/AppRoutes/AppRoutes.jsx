@@ -1,6 +1,7 @@
 import React from 'react'
-import { Route, Routes, useLocation } from 'react-router-dom'
+import { Route, Routes } from 'react-router-dom'
 import LoginScreen from '../Screens/LoginScreen/LoginScreen'
+import RegisterScreen from '../Screens/RegisterScreen/RegisterScreen' 
 import ProductsScreen from '../Screens/ProductsScreen/ProductsScreen'
 import ProductDetailScreen from '../Screens/ProductDetailScreen/ProductDetailScreen'
 
@@ -17,6 +18,7 @@ function AppRoutes() {
     <Routes>
       <Route path="/" element={<ProductsScreen />} />
       <Route path="/login" element={<LoginScreen />} />
+      <Route path="/register" element={<RegisterScreen />} />
       <Route path="/product/:id" element={<ProductDetailScreen />} />
     </Routes>
   )

@@ -8,14 +8,14 @@ Tailwind CSS – Framework de estilos
 Vite – Herramienta para desarrollo rápido
 JSON local – Datos simulados
 
-📁 Estructura del proyecto
-pgsql
-Copy
-Edit
+## 📁 Estructura del proyecto
+```plaintext
 src/
 ├── Components/  
 │   ├── Login  
 │   │   └── Login.jsx  
+│   ├── Register  
+│   │   └── Register.jsx  
 │   ├── NavBar/  
 │   │   └── NavBar.jsx  
 │   └── Product/  
@@ -24,6 +24,8 @@ src/
 ├── Screens/  
 │   ├── LoginScreen/  
 │   │   └── LoginScreen.jsx  
+│   ├── RegisterScreen/  
+│   │   └── RegisterScreen.jsx  
 │   ├── ProductDetailScreen/  
 │   │   └── ProductDetailScreen.jsx  
 │   └── ProductsScreen/  
@@ -32,7 +34,10 @@ src/
 ├── Services/  
 │   └── mock_data.json  
 └── App.jsx  
-⚙️ Instalación y uso  
+```
+
+
+## ⚙️ Instalación y uso  
 Cloná el proyecto:
 git clone https://github.com/tu-usuario/tu-repo.git
 cd tu-repo
@@ -46,6 +51,7 @@ Abrí el navegador en http://localhost:5173 o el puerto que indique Vite.
 
 ##  📌 Funcionalidades
 ✅ Vista de login (estática)
+✅ Vista de registro (estática)
 ✅ Catálogo de productos
 ✅ Detalle individual de producto
 ✅ Simulación de compra (descuenta stock)
