@@ -11,7 +11,9 @@ import ProductDetailScreen from '../Screens/ProductDetailScreen/ProductDetailScr
  * Aqu  se definen las rutas para:
  * - La pantalla de inicio (que muestra todos los productos)
  * - La pantalla de login
+ *  * - La pantalla de Regitro
  * - La pantalla de detalles de un producto
+ * 
  */
 function AppRoutes() {
   return (
