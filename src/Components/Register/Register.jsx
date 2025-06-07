@@ -20,7 +20,6 @@ function Register() {
 
   return (
     <section className="m-10 flex flex-col min-h-screen p-4">
-      {/* Formulario centrado */}
       <div className="flex-grow flex justify-center">
         <form className="w-full max-w-sm space-y-6">
           <h2 className="text-2xl font-semibold text-gray-800 text-center">

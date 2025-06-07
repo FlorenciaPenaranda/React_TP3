@@ -1,12 +1,12 @@
 ##  🛍️ Tienda React – Proyecto de práctica
-Este proyecto es una tienda online desarrollada en React con estilos usando Tailwind CSS, que simula la venta de productos (Apple Watch) desde un archivo de datos local (mock_data.json). Incluye navegación entre pantalla de login, listado de productos y detalle individual.
+Este proyecto es una tienda online desarrollada en React con estilos usando Tailwind CSS. Ha evolucionado para gestionar productos directamente desde Firebase, ofreciendo una experiencia más dinámica y completa que un proyecto de práctica inicial. Permite navegar entre la pantalla de login, el listado de productos y el detalle individual, además de agregar y actualizar el catálogo en tiempo real.
 
 ##  🚀 Tecnologías utilizadas
 React – Framework de UI
 React Router DOM – Ruteo entre páginas
 Tailwind CSS – Framework de estilos
 Vite – Herramienta para desarrollo rápido
-JSON local – Datos simulados
+Firebase (Firestore) – Base de datos NoSQL para la gestión de productos en tiempo real.
 
 ## 📁 Estructura del proyecto
 ```plaintext
@@ -18,8 +18,17 @@ src/
 │   │   └── Register.jsx  
 │   ├── NavBar/  
 │   │   └── NavBar.jsx  
-│   └── Product/  
-│       └── ProductCard.jsx  
+│   ├── Product/  
+│   │    └── ProductCard.jsx  
+│   └── NuevoProducto/  
+│       └── NuevoProducto.jsx  
+├── Config/  
+│   └── Firebase/  
+│       └── Firebase.jsx   
+│
+├── Context/  
+│   └── ProductProvider/  
+│        └── ProductProvider.jsx   
 │
 ├── Screens/  
 │   ├── LoginScreen/  
@@ -31,9 +40,11 @@ src/
 │   └── ProductsScreen/  
 │       └── ProductsScreen.js  
 │
-├── Services/  
-│   └── mock_data.json  
-└── App.jsx  
+├── Services/
+│   └── ProductServices.js # Ahora se conecta a Firebase
+│   └── getPRoducts.jsx
+│
+└── App.jsx  
 ```
 
 
@@ -53,22 +64,17 @@ npm run dev
 ##  📌 Funcionalidades
 ✅ Vista de login (estática)
 ✅ Vista de registro (estática)
-✅ Catálogo de productos
+✅ Catálogo de productos (cargados desde Firebase)
+✅ Agrega nuevos productos al catálogo (persistencia en Firebase)
+✅ Actualización automática del catálogo al agregar un producto
 ✅ Detalle individual de producto
 ✅ Simulación de compra (descuenta stock)
-✅ Responsive con Tailwind
+✅ Diseño Responsive con Tailwind CSS
 ✅ Ruteo entre vistas
 
-##  🗃️ Datos simulados
-Los productos están cargados desde el archivo:
+##  🗃️ Gestión de Datos
+Los datos de los productos ya no se cargan desde un archivo JSON local. Ahora se gestionan y persisten directamente en Firebase Firestore, lo que permite una administración de datos más dinámica y real. La aplicación interactúa con Firestore para:
 
-src/Services/mock_data.json
-Cada producto tiene:
-id
-nombre
-imagen
-precioReal
-precioFinal
-porcentajeOferta
-cantidadDisponible
-detalles (técnicos)
+Cargar la lista completa de productos.
+Agregar nuevos productos a la base de datos.
+Actualizar la lista de productos en la interfaz de usuario después de agregar un nuevo elemento.

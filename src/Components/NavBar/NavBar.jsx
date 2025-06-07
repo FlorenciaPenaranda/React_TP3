@@ -10,21 +10,19 @@ import { Link } from 'react-router-dom';
  * navegación superior.
  */
 function NavBar() {
-  // Estado para controlar la visibilidad del menú en dispositivos móviles
   const [menuOpen, setMenuOpen] = useState(false);
 
-  // Función para alternar el estado del menú
   const toggleMenu = () => setMenuOpen((prev) => !prev);
 
   return (
-    <nav className="m-10 bg-white border-gray-200 dark:bg-gray-900">
+    <nav className="p-6 bg-white border-gray-200 dark:bg-gray-900 sticky top-0 z-50 shadow-md bg-white">
       <div className="flex flex-wrap items-center justify-between mx-auto">
         <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
           <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
             My E-commerce
           </span>
         </a>
-        {/* Botón para mostrar/ocultar el menú en móviles */}
+
         <button
           type="button"
           onClick={toggleMenu}
@@ -37,7 +35,6 @@ function NavBar() {
             <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 1h15M1 7h15M1 13h15"/>
           </svg>
         </button>
-        {/* Menú desplegable en dispositivos móviles */}
         <div
           className={`${
             menuOpen ? "block" : "hidden"
