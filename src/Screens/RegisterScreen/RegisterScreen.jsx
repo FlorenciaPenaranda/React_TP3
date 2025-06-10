@@ -1,5 +1,5 @@
 import React from 'react'
-import Register from '../../Components/Register/register'
+import Register from '../../Components/Register/Register'
 
 /**
  * Pantalla de registro que renderiza el componente de Register.
