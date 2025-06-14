@@ -83,7 +83,7 @@ Actualizar la lista de productos en la interfaz de usuario después de agregar u
 ¡La tienda online ya está en vivo! Puedes explorar la versión más reciente del proyecto desplegada en Vercel.
 
 🌐 Visita la Tienda Aquí:
-https://florenciapenarandareactjs-ei3tmnozc.vercel.app
+https://reactjstpfinal.vercel.app/
 
 
 Simplemente haz clic en el enlace de arriba o cópialo y pégalo en tu navegador para empezar a explorar la tienda.
